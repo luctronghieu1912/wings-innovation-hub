@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="author" content="bslthemes" />
+
+    <!-- grid css -->
+    <link
+      rel="stylesheet"
+      href="/wings-innovation-hub/public/css/plugins/bootstrap-grid.css"
+    />
+    <!-- font awesome css -->
+    <link
+      rel="stylesheet"
+      href="/wings-innovation-hub/public/fonts/css/font-awesome.min.css"
+    />
+
+    <!-- swiper css -->
+    <link
+      rel="stylesheet"
+      href="/wings-innovation-hub/public/css/plugins/swiper.min.css"
+    />
+    <!-- <link rel="stylesheet" href="css/plugins/swiper-bundle.min.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- okai css -->
+    <link rel="stylesheet" href="/wings-innovation-hub/public/css/style.css" />
+    <!-- page title -->
+    <title>Wings Innovation Hub</title>
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="/wings-innovation-hub/public/img/logos/logoweb.webp"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="/wings-innovation-hub/public/img/logos/logoweb.webp"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <!-- wrapper -->
+    <div id="smooth-wrapper" class="mil-page-wrapper">
+      <!-- cursor -->
+      <div class="mil-cursor-follower"></div>
+      <!-- cursor end -->
+
+      <!-- scroll progress -->
+      <div class="mil-progress-track">
+        <div class="mil-progress"></div>
+      </div>
+      <!-- scroll progress end -->
+      <!-- ------------------------------- -->
+
+      <!-- ------------------------------- -->
+      <!-- top panel & menu -->
+      <%- include('partials/header') %>
+      <!-- ----------------------------- -->
+
+      <!-- content -->
+      <div id="smooth-content" class="mil-content">
+        <!-- banner -->
+        <div class="mil-banner mil-image-banner">
+          <img
+            src="/wings-innovation-hub/public/img/banners/6.jpg"
+            alt="banner"
+            class="mil-banner-bg mil-scale-img"
+            data-value-1=".68"
+            data-value-2="1.1"
+          />
+          <div class="container">
+            <div class="row mil-aic">
+              <div class="col-12">
+                <div class="mil-banner-text">
+                  <h1 class="mil-fs68 mil-mb60">
+                    Wings Innovation Hub<br />
+                    <span class="hero-sub"
+                      >Human Media | Cultural Innovation</span
+                    >
+                  </h1>
+                  <p class="mil-text mil-fs18 mil-mb30">
+                    <%= t.banner_title %>
+                  </p>
+
+                  <a href="portfolio.html" class="mil-btn mil-c-gone"
+                    ><%= t.btn_text %></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- banner end -->
+        <!-- experience -->
+        <div>
+          <div class="container">
+            <div class="row mil-jcb">
+              <div class="col-lg-1"></div>
+              <div class="col-lg-4">
+                <div class="mil-exp-box-2 mil-type-2 mil-mb30 mil-up">
+                  <div class="mil-exp-content mil-up">
+                    <div class="mil-exp-number">20+</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 mil-p-120-0 mil-992-p-0-0">
+                <h4 class="mil-text mil-fs42 mil-light mil-mb90 mil-up">
+                  <%- t.exp_title %>
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- experience end -->
+        <!-- about -->
+        <div class="mil-about mil-p-30-120">
+          <div class="container">
+            <div class="row flex-sm-row-reverse mil-jcb mil-aic">
+              <div class="col-lg-5 mil-relative">
+                <div class="mil-about-text">
+                  <div class="mil-up">
+                    <a
+                      href="about.html"
+                      class="mil-btn mil-btn-border mil-c-gone"
+                    >
+                      <%= t.btn_about %>
+                    </a>
+                  </div>
+                  <h2 class="mil-fs42 mil-mb30 mil-up"><%- t.about_title %></h2>
+                  <p class="mil-text mil-fs16 mil-mb30 mil-up">
+                    <%= t.about_text %>
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-7 mil-about-image-frame">
+                <div class="mil-about-img mil-out-right mil-up">
+                  <img
+                    src="/wings-innovation-hub/public/img/home/xay-dung-anh-huong.webp"
+                    alt="banner"
+                    class="mil-scale-img"
+                    data-value-1="1"
+                    data-value-2="1.1"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- about end -->
+
+        <!-- --------------- -->
+        <!-- services -->
+
+        <%- include('partials/services') %>
+
+        <!-- services end -->
+        <!-- --------------- -->
+
+        <!-- portfolio -->
+        <div class="mil-portfolio mil-p-0-120">
+          <div class="container">
+            <div class="row mil-jcc">
+              <div class="col-12 mil-mb90">
+                <span class="mil-suptitle mil-accent mil-mb30 mil-up">
+                  Dự án tiêu biểu</span
+                >
+                <h2 class="mil-fs42 mil-up">
+                  Hành trình tạo ảnh hưởng <br />qua dự án văn hoá
+                </h2>
+              </div>
+              <div class="col-lg-8">
+                <div class="swiper-conteiner mil-portfolio-slider mil-c-swipe">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="mil-project-card mil-mb30 mil-up">
+                        <div class="mil-cover-frame mil-h">
+                          <div class="mil-hover-frame">
+                            <img
+                              src="/wings-innovation-hub/public/img/home/projects/Artboard 2.webp"
+                              alt="project cover"
+                              class="mil-scale-img"
+                              data-value-1="1"
+                              data-value-2="1.1"
+                            />
+                          </div>
+                          <div class="mil-hover-overlay">
+                            <a
+                              href="hat-cung-nguon-coi-project.html"
+                              class="mil-addition-btn mil-c-gone"
+                              >View</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="mil-project-card mil-mb30 mil-up">
+                        <div class="mil-cover-frame mil-h">
+                          <div class="mil-hover-frame">
+                            <img
+                              src="/wings-innovation-hub/public/img/home/projects/Artboard 1.webp"
+                              alt="project cover"
+                              class="mil-scale-img"
+                              data-value-1="1"
+                              data-value-2="1.1"
+                            />
+                          </div>
+                          <div class="mil-hover-overlay">
+                            <a
+                              href="project.html"
+                              class="mil-addition-btn mil-c-gone"
+                              >View</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="mil-project-card mil-mb30 mil-up">
+                        <div class="mil-cover-frame mil-h">
+                          <div class="mil-hover-frame">
+                            <img
+                              src="/wings-innovation-hub/public/img/home/projects/Artboard 3.webp"
+                              alt="project cover"
+                              class="mil-scale-img"
+                              data-value-1="1"
+                              data-value-2="1.1"
+                            />
+                          </div>
+                          <div class="mil-hover-overlay">
+                            <a
+                              href="project.html"
+                              class="mil-addition-btn mil-c-gone"
+                              >View</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="mil-project-card mil-mb30 mil-up">
+                        <div class="mil-cover-frame mil-h">
+                          <div class="mil-hover-frame">
+                            <img
+                              src="/wings-innovation-hub/public/img/home/projects/Artboard 4.webp"
+                              alt="project cover"
+                              class="mil-scale-img"
+                              data-value-1="1"
+                              data-value-2="1.1"
+                            />
+                          </div>
+                          <div class="mil-hover-overlay">
+                            <a
+                              href="project.html"
+                              class="mil-addition-btn mil-c-gone"
+                              >View</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="mil-project-card mil-mb30 mil-up">
+                        <div class="mil-cover-frame mil-h">
+                          <div class="mil-hover-frame">
+                            <img
+                              src="/wings-innovation-hub/public/img/home/projects/Artboard 5.webp"
+                              alt="project cover"
+                              class="mil-scale-img"
+                              data-value-1="1"
+                              data-value-2="1.1"
+                            />
+                          </div>
+                          <div class="mil-hover-overlay">
+                            <a
+                              href="project.html"
+                              class="mil-addition-btn mil-c-gone"
+                              >View</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mil-jcc">
+              <div class="col-4">
+                <div class="mil-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- portfolio end -->
+
+        <!-- partners brands -->
+        <%- include('partials/partners') %>
+        <!-- partners end -->
+
+        <!-- blog -->
+        <div class="mil-p-0-90">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 mil-mb90">
+                <span class="mil-suptitle mil-accent mil-mb30 mil-up"
+                  >Insights & Stories</span
+                >
+                <h2 class="mil-fs42 mil-up">Wings trên báo chí</h2>
+              </div>
+              <!-- Swiper Container -->
+              <div class="swiper-container mil-blog-slider">
+                <div class="swiper-wrapper">
+                  <!-- Slide 1 -->
+                  <div class="swiper-slide">
+                    <a
+                      href="https://thanhnien.vn/hat-cung-nguon-coi-nhung-trang-doi-thang-tram-cua-mot-huyen-thoai-am-nhac-18526030911572486.htm?gidzl=DpkD2bcGVbm-8eaBLePzMp4ZWmr0sNLUVNM1MnBRSLfySeDU5uXy1tWXZLuKY7eCVNA92Z5VdCPWMfPzMm"
+                      class="mil-blog-card mil-mb30 mil-c-read"
+                    >
+                      <div class="mil-card-cover mil-up">
+                        <div class="mil-hover-frame">
+                          <img
+                            src="/wings-innovation-hub/public/img/news/baothanhnien-hatcungnguoncoi.webp"
+                            alt="cover"
+                            class="mil-scale-img"
+                            data-value-1="1"
+                            data-value-2="1.1"
+                          />
+                        </div>
+                        <div class="mil-hover-overlay"></div>
+                      </div>
+                      <h4 class="mil-text mil-fs26 mil-mb30 mil-up">
+                        'Hát cùng nguồn cội': Những trang đời thăng trầm của một
+                        'huyền thoại âm nhạc'
+                      </h4>
+                    </a>
+                  </div>
+
+                  <!-- Slide 2 -->
+                  <div class="swiper-slide">
+                    <a
+                      href="https://thanhnien.vn/thach-thuc-van-hoa-trong-ky-nguyen-so-185260420205811099.htm?gidzl=azgwPOXCcrkQmxvaXrgONPpFjMAO295Pq9ctDCeAbLtHdhKnprcO0DNDkp7CMPuBq9w_PJ4geHG8YqgON0"
+                      class="mil-blog-card mil-mb30 mil-c-read"
+                    >
+                      <div class="mil-card-cover mil-up">
+                        <div class="mil-hover-frame">
+                          <img
+                            src="/wings-innovation-hub/public/img/news/thach-thuc-van-hoa.webp"
+                            alt="cover"
+                            class="mil-scale-img"
+                            data-value-1="1"
+                            data-value-2="1.1"
+                          />
+                        </div>
+                        <div class="mil-hover-overlay"></div>
+                      </div>
+                      <h4 class="mil-text mil-fs26 mil-mb30 mil-up">
+                        Thách thức văn hóa trong kỷ nguyên số
+                      </h4>
+                    </a>
+                  </div>
+
+                  <!-- Slide 3 -->
+                  <div class="swiper-slide">
+                    <a
+                      href="https://tuoitre.vn/cloud-circus-nhat-ban-ky-ket-hop-tac-chien-luoc-cung-canh-cam-20241121170815098.htm?gidzl=g1m26BxBsdUX1GOPiTtPSQG51HsjWzXtw5C7I_-1t7FfL0LE-jBHBkq72qxvqjSbw5GF6Z4duErPlStPS0#content-2"
+                      class="mil-blog-card mil-mb30 mil-c-read"
+                    >
+                      <div class="mil-card-cover mil-up">
+                        <div class="mil-hover-frame">
+                          <img
+                            src="/wings-innovation-hub/public/img/news/cloud-circus.jpg"
+                            alt="cover"
+                            class="mil-scale-img"
+                            data-value-1="1"
+                            data-value-2="1.1"
+                          />
+                        </div>
+                        <div class="mil-hover-overlay"></div>
+                      </div>
+                      <h4 class="mil-text mil-fs26 mil-mb30 mil-up">
+                        Cloud CIRCUS Nhật Bản ký kết hợp tác chiến lược cùng
+                        Cánh Cam
+                      </h4>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Thêm thanh điều hướng nếu muốn -->
+                <div
+                  class="mil-slider-pagination mil-up"
+                  style="margin-top: 30px"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- blog end -->
+        <!-- call to action -->
+        <div class="mil-accent-section mil-up mil-p-180-180">
+          <div class="container">
+            <h2 class="mil-fs68 mil-light mil-mb30 mil-up">
+              Bắt đầu cùng Wings
+              <a href="contact.html" class="btn-now mil-c-gone">ngay bây giờ</a>
+            </h2>
+            <p class="mil-text mil-fs26 mil-light mil-up">
+              Nếu bạn đang tìm một đối tác có thể chuyển hoá nội dung, trải
+              nghiệm và cộng đồng thành ảnh hưởng thực tế, Wings sẵn sàng đồng
+              hành.
+              <a href="contact.html" class="btn-now mil-c-gone">online chat</a>
+            </p>
+          </div>
+        </div>
+        <!-- call to action end -->
+        <!-- footer -->
+        <%- include('partials/footer') %>
+
+        <!-- footer end -->
+      </div>
+      <!-- content -->
+    </div>
+    <!-- wrapper end -->
+
+    <!-- gsap js -->
+    <script src="/wings-innovation-hub/public/js/plugins/gsap.min.js"></script>
+    <!-- scroll smoother -->
+    <script src="/wings-innovation-hub/public/js/plugins/ScrollSmoother.min.js"></script>
+    <!-- scroll trigger js -->
+    <script src="/wings-innovation-hub/public/js/plugins/ScrollTrigger.min.js"></script>
+    <!-- scroll to js -->
+    <script src="/wings-innovation-hub/public/js/plugins/ScrollTo.min.js"></script>
+    <!-- swiper js -->
+    <script src="/wings-innovation-hub/public/js/plugins/swiper.min.js"></script>
+    <!-- <script src="js/plugins/swiper-bundle.min.js"></script>
+     -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- okai js -->
+    <script src="/wings-innovation-hub/public/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="author" content="bslthemes" />
+
+    <!-- grid css -->
+    <link
+      rel="stylesheet"
+      href="/wings-innovation-hub/public/css/plugins/bootstrap-grid.css"
+    />
+    <!-- font awesome css -->
+    <link
+      rel="stylesheet"
+      href="/wings-innovation-hub/public/fonts/css/font-awesome.min.css"
+    />
+
+    <!-- swiper css -->
+    <link
+      rel="stylesheet"
+      href="/wings-innovation-hub/public/css/plugins/swiper.min.css"
+    />
+    <!-- <link rel="stylesheet" href="css/plugins/swiper-bundle.min.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- okai css -->
+    <link rel="stylesheet" href="/wings-innovation-hub/public/css/style.css" />
+    <!-- page title -->
+    <title>Wings Innovation Hub</title>
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="/wings-innovation-hub/public/img/logos/logoweb.webp"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="/wings-innovation-hub/public/img/logos/logoweb.webp"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- wrapper -->
+    <div id="smooth-wrapper" class="mil-page-wrapper">
+      <!-- cursor -->
+      <div class="mil-cursor-follower"></div>
+      <!-- cursor end -->
+
+      <!-- scroll progress -->
+      <div class="mil-progress-track">
+        <div class="mil-progress"></div>
+      </div>
+      <!-- scroll progress end -->
+
+      <!-- top panel & menu -->
+      <%- include('partials/header') %>
+      <!-- top panel & menu end -->
+
+      <!-- content -->
+      <div id="smooth-content" class="mil-content">
+        <!-- banner -->
+        <div class="mil-banner-inner">
+          <div class="container">
+            <div class="mil-banner-text">
+              <div>
+                <h1 class="mil-fs68 mil-mb30">Contact us</h1>
+                <ul class="mil-breadcrumbs">
+                  <li>
+                    <a href="home-1.html" class="mil-c-gone">Home</a>
+                  </li>
+                  <li>
+                    <a href="home-1.html" class="mil-c-gone">Pages</a>
+                  </li>
+                  <li>
+                    <a href="home-1.html" class="mil-c-gone">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="mil-banner-img">
+            <img
+              src="/wings-innovation-hub/public/img/banners/17.jpg"
+              alt="banner"
+              class="mil-scale-img"
+              data-value-1=".90"
+              data-value-2="1.11"
+            />
+          </div>
+        </div>
+        <!-- banner end -->
+        <!-- contact -->
+        <div class="mil-p-120-120 mil-soft-section">
+          <div class="container">
+            <div class="row mil-jcc">
+              <div class="col-md-8 mil-tac">
+                <span class="mil-suptitle mil-accent mil-mb30 mil-up"
+                  >Contact</span
+                >
+                <h2 class="mil-fs42 mil-up mil-mb90">Dare, just say Hello!</h2>
+                <script type="text/javascript">
+                  var submitted = false;
+                </script>
+
+                <iframe
+                  name="hidden_iframe"
+                  id="hidden_iframe"
+                  style="display: none"
+                  onload="
+                    if (submitted) {
+                      document.getElementById('formMessage').style.display =
+                        'block';
+                      document.getElementById('contactForm').reset();
+                    }
+                  "
+                ></iframe>
+                <form
+                  id="contactForm"
+                  class="mil-form"
+                  action="https://script.google.com/macros/s/AKfycbwSk2Bawj9dhiS3A2o4nMcTpMW35uvKhnp93ufOqcvPpvrMQLjRuuFjwDS571vqFg_g/exec"
+                  method="post"
+                  target="hidden_iframe"
+                  onsubmit="submitted = true"
+                >
+                  <div class="row">
+                    <div class="col-6 mil-mb30">
+                      <input
+                        type="text"
+                        name="Name"
+                        placeholder="Name"
+                        class="mil-up"
+                        required
+                      />
+                    </div>
+                    <div class="col-6 mil-mb30">
+                      <input
+                        type="email"
+                        name="Email"
+                        placeholder="Email"
+                        class="mil-up"
+                        required
+                      />
+                    </div>
+                    <div class="col-12">
+                      <textarea
+                        name="Message"
+                        placeholder="Your message"
+                        class="mil-mb30 mil-up"
+                        required
+                      ></textarea>
+                      <div class="mil-up">
+                        <button
+                          id="submitBtn"
+                          type="submit"
+                          class="mil-btn mil-c-gone"
+                        >
+                          Send Message
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <p
+                  id="formMessage"
+                  style="
+                    display: none;
+                    text-align: center;
+                    margin-top: 20px;
+                    color: #002fa7;
+                  "
+                >
+                  Cảm ơn bạn! Lời nhắn đã được gửi thành công.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- contact end -->
+        <!-- footer -->
+        <%- include('partials/footer') %>
+        <!-- footer end -->
+      </div>
+      <!-- content -->
+    </div>
+    <!-- wrapper end -->
+
+    <!-- gsap js -->
+    <script src="/wings-innovation-hub/public/js/plugins/gsap.min.js"></script>
+    <!-- scroll smoother -->
+    <script src="/wings-innovation-hub/public/js/plugins/ScrollSmoother.min.js"></script>
+    <!-- scroll trigger js -->
+    <script src="/wings-innovation-hub/public/js/plugins/ScrollTrigger.min.js"></script>
+    <!-- scroll to js -->
+    <script src="/wings-innovation-hub/public/js/plugins/ScrollTo.min.js"></script>
+    <!-- swiper js -->
+    <script src="/wings-innovation-hub/public/js/plugins/swiper.min.js"></script>
+    <!-- okai js -->
+    <script src="/wings-innovation-hub/public/js/main.js"></script>
+    <script>
+      // Form????
+      const form = document.getElementById("contactForm");
+      const submitBtn = document.getElementById("submitBtn");
+      const formMessage = document.getElementById("formMessage");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault(); // Chặn hành động chuyển trang mặc định của Form
+
+        // Đổi chữ trên nút để báo hiệu đang tải
+        let originalBtnText = submitBtn.innerText;
+        submitBtn.innerText = "ĐANG GỬI...";
+        submitBtn.disabled = true;
+
+        // Lấy dữ liệu gửi đi
+        fetch(form.action, {
+          method: "POST",
+          body: new FormData(form),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.result === "success") {
+              formMessage.innerText =
+                "Cảm ơn bạn! Lời nhắn đã được gửi thành công.";
+              formMessage.style.color = "#002fa7"; // Màu chữ xanh
+              form.reset(); // Xóa trắng form sau khi gửi
+            } else {
+              formMessage.innerText = "Có lỗi xảy ra, vui lòng thử lại sau.";
+              formMessage.style.color = "red";
+            }
+            formMessage.style.display = "block";
+            submitBtn.innerText = originalBtnText;
+            submitBtn.disabled = false;
+          })
+          .catch((error) => {
+            formMessage.innerText = "Lỗi kết nối! Vui lòng thử lại.";
+            formMessage.style.color = "red";
+            formMessage.style.display = "block";
+            submitBtn.innerText = originalBtnText;
+            submitBtn.disabled = false;
+          });
+      });
+    </script>
+  </body>
+</html>
